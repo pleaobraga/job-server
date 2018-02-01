@@ -1,0 +1,19 @@
+{
+  "name": "server-job-posting",
+  "version": "0.0.1",
+  "description": "A server for the job posting",
+  "main": "index.js",
+  "keywords": [
+    "job-posting",
+    "HeyJobs"
+  ],
+  "author": "Pedro Leão",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "clone": "^2.1.1"
+  }
+}
