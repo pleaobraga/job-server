@@ -17,5 +17,5 @@ The following endpoints are available:
 
 | Endpoints       | Usage          | Params         |
 |-----------------|----------------|----------------|
-| `GET /posts` | Get all of the posts. Useful for the main page when no category is selected. |  |
-| `GET /posts/:id` | Get the details of a single post. | |
+| `GET /jobs` | Get all of the jobs. Useful for the main page. |  |
+| `GET /jobs/:id` | Get the details of a single job. | |
