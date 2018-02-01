@@ -5,14 +5,33 @@ let db = {}
 const defaultData = {
   "0": {
     id: '0',
-    timestamp: 1467166872634,
-    title: '',
-    body: 'Everyone says so after all.',
-    author: 'thingtwo',
-    category: 'react',
-    voteScore: 6,
-    deleted: false,
-    commentCount: 2
+    date: 1467166872634,
+    title: 'Front-end Developer (m/f) with focus on React JS',
+    company: 'HeyJobs',
+    location: 'Berlin',
+    workSchedule: 'Full-Time',
+    description: {
+      title: 'Your role',
+      type: 'text',
+      content: 'As a front-end developer, you are responsible for shaping how our product looks and behaves.'
+    },    
+    topics: [
+      { 
+        title: 'profile', 
+        type:'list', 
+        content: [`A fast-paced work yet highly caring and professional environment`] 
+      }, 
+      { 
+        title: 'What we offer', 
+        type:'list', 
+        content: [`A fast-paced work yet highly caring and professional environment`] 
+      }, 
+      { 
+        title: 'Interested?', 
+        type:'text', 
+        content: [`Send us your CV and we will get back to you as soon as possible.`] 
+      } 
+    ]
   }
 }
 
