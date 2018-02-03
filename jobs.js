@@ -3,8 +3,8 @@ const clone = require('clone')
 let db = {}
 
 const defaultData = {
-  "0": {
-    id: '0',
+  0: {
+    id: 0,
     date: 1467166872634,
     title: 'Front-end Developer (m/f) with focus on React JS',
     company: 'HeyJobs',
@@ -43,23 +43,21 @@ function getData (token = 'jobs') {
   return data
 }
 
-function get (id, token = 'jobs') {
+function get (token = 'jobs', id) {
   return new Promise((res) => {
-    const posts = getData(token)
+    const jobs = getData(token)
     res(
-      posts[id].deleted
-        ? {}
-        : posts[id]
+      jobs[id]
     )
   })
 }
 
 function getAll (token = 'jobs') {
   return new Promise((res) => {
-    const posts = getData(token)
-    let keys = Object.keys(posts)
-    let filtered_keys = keys.filter(key => !posts[key].deleted)
-    res(filtered_keys.map(key => posts[key]))
+    const jobs = getData(token)
+    let keys = Object.keys(jobs)
+    let filtered_keys = keys.filter(key => !jobs[key].deleted)
+    res(filtered_keys.map(key => jobs[key]))
   })
 }
 
