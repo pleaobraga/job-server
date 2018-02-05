@@ -7,7 +7,6 @@ This App was created to provide posted jobs available.
 To get started Application right away:
 
 * Install and start the API server
-    - `cd api-server`
     - `npm install`
     - `node server`
 
